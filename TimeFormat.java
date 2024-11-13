@@ -11,7 +11,7 @@ public class TimeFormat {
 		// and then uses parseInt to cast the resulting string as an int.
 
 		
-		String time = args[0];
+		
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
@@ -21,19 +21,21 @@ public class TimeFormat {
 		//{
 			
 		//}
-
+		String timeFormat = "AM";
 		if (hours > 12)
 		{
 			hours = hours - 12;
+			timeFormat = "PM";
 		}
+		
 
 		if (minutes < 10)
 		{
-			System.out.println(hours + ":0" + minutes + " PM");
+			System.out.println(hours + ":0" + minutes + " " + timeFormat);
 		}
 		else
 		{
-			System.out.println(hours + ":" + minutes + " PM");
+			System.out.println(hours + ":" + minutes + " " + timeFormat);
 		}
 			
 		
