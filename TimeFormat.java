@@ -27,6 +27,10 @@ public class TimeFormat {
 			hours = hours - 12;
 			timeFormat = "PM";
 		}
+		if (hours == 12)
+		{
+			timeFormat = "PM";
+		}
 		
 
 		if (minutes < 10)
