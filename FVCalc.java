@@ -3,17 +3,16 @@ public class FVCalc {
 	public static void main(String[] args){
 		
 		int currentValue = Integer.parseInt(args[0]);		//the invested sum
-		Double aiRate = Double.parseDouble(args[1]);			// the annual interest rate
-		aiRate = aiRate / 100;
+		double aiRate = Double.parseDouble(args[1]);			// the annual interest rate
+		aiRate = aiRate / 100;								
 		int yrs = Integer.parseInt(args[2]);			// num of years
 
-		Double newRate = Math.pow((aiRate) + 1, yrs);
+		double newRate = Math.pow((aiRate) + 1, yrs);
 		
-		System.out.println(newRate);
-		
-		Double FutureValue = newRate * currentValue ;
-		System.out.println(FutureValue);
-		System.out.println("After " + yrs + " years, " + currentValue + "$ saved at " + aiRate + "% will yeald " + FutureValue);
+		double FutureValue = newRate * currentValue;
+		int FVround= (int)FutureValue;		//the future value in int
+
+		System.out.println("After " + yrs + " years, a " + currentValue + "$ saved at " + (aiRate*100) + "% will yeald " + FVround);
 
 
 
