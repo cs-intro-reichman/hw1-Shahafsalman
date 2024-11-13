@@ -10,13 +10,17 @@ public class TimeFormat {
 		// It then concatenates the resulting string with the rightmost hour-digit,
 		// and then uses parseInt to cast the resulting string as an int.
 
+		
 		String time = args[0];
-
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		// Does the same with the minutes part of the input.
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
         // Replace this comment with the rest of your code
-		
+		//String realTime = [1]
+		//if (time.length() == 3)
+		//{
+			
+		//}
 
 		if (hours > 12)
 		{

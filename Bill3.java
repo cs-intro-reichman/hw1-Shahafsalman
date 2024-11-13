@@ -6,11 +6,12 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 
-		Double bill = Double.parseDouble(args[3]);
+		double bill = Double.parseDouble(args[3]);
 		bill = Math.ceil(bill);
-		Double totBill = bill / 3;
+		double totBill = bill / 3;
+		totBill = Math.ceil(totBill);
 
-		System.out.println("Dear " + name1 + ", " + name2 + " and " + name3 + ": pay " + totBill + " each.");
+		System.out.println("Dear " + name1 + ", " + name2 + " and " + name3 + ": pay " + totBill + " shekels each.");
 
 	}
 }
