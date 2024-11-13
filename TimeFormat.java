@@ -25,11 +25,11 @@ public class TimeFormat {
 
 		if (minutes < 10)
 		{
-			System.out.println(hours + " : 0" + minutes + " PM");
+			System.out.println(hours + ":0" + minutes + " PM");
 		}
 		else
 		{
-			System.out.println(hours + " : " + minutes + " PM");
+			System.out.println(hours + ":" + minutes + " PM");
 		}
 			
 		
