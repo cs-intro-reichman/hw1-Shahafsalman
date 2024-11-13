@@ -11,7 +11,7 @@ public class Bill3 {
 		double totBill = bill / 3;
 		totBill = Math.ceil(totBill);
 
-		System.out.println("Dear " + name1 + ", " + name2 + " and " + name3 + ": pay " + totBill + " shekels each.");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + totBill + " shekels each.");
 
 	}
 }
