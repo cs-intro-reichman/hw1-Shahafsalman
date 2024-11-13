@@ -12,7 +12,7 @@ public class FVCalc {
 		double FutureValue = newRate * currentValue;
 		int FVround= (int)FutureValue;		//the future value in int
 
-		System.out.println("After " + yrs + " years, a " + currentValue + "$ saved at " + (aiRate*100) + "% will yeald " + FVround + "$");
+		System.out.println("After " + yrs + " years, a $" + currentValue + " saved at " + (aiRate*100) + "% will yeald $" + FVround);
 
 
 
